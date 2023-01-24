@@ -9,105 +9,35 @@
   <link rel="stylesheet" href="/css/index_style.css">
   <link rel="shortcut icon" href="/images/logo.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script defer src="/scripts/index.js"></script>
-  <script defer src="/scripts/tracker.js"></script>
-  <script defer src="/scripts/animation.js"></script>
   <title>Login Page</title>
 </head>
 
 <body>
-  <div id="hidden-div">
-    <div class="behavioral-tracking">
-      <div id="clicks">Total number of mouse clicks: 0</div>
-      <div id="time">Total time spent: 0s</div>
-      <div id="key">Total number of keys pressed: 0</div>
-      <div id="chars">Total number of characters typed: 0</div>
-      <div id="hide-tracking">Oops! We weren't tracking you, we promise!<button onclick="hideTracking()"><u>Hide
-            Tracking Data</u></button></div>
-    </div>
-  </div>
-  <div id="content">
+  <div class="content">
     <div class="sign-in-form">
       <div class="slider-div">
         <div id="slider"></div>
-        <button type="button" class="toggle-btn" onclick="move_to_login_form()">Log In</button>
-        <button type="button" class="toggle-btn" onclick="move_to_register_form()">Register</button>
+        <button type="button" class="toggle-btn" onclick="move_login_form()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="move_register_form()">Register</button>
       </div>
       <img class="logo" src="/images/logo.png">
-      <form id="login" class="user-input" action="home_screen.html">
-        <div class="input-box">
-          <input type="username" id="login_username" class="input-field" placeholder="Username"
-            onchange="validateLoginUsername()">
-          <div class="message"></div>
-        </div>
-
-        <div class="input-box">
-          <input type="password" id="login_password" class="input-field" placeholder="Password"
-            onchange="validateLoginPassword()">
-          <div class="message"></div>
-        </div>
+      <form id="login" class="user-input">
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
         <input type="checkbox" class="tickbox"><span>Remember Password</span>
-        <input type="submit" class="submit-btn" value="Login" onclick="showTracking()"></input>
+        <button type="submit" class="submit-btn"><a class="button" href="home_screen.html">Login</a></button>
       </form>
-      <form id="register" class="user-input" action="home_screen.html">
-        <div class="input-box">
-          <input type="text" id="register_name" class="input-field" placeholder="Name"
-            onchange="validateRegisterName()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="email" id="register_email" class="input-field" placeholder="Email"
-            onchange="validateRegisterEmail()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="username" id="register_username" class="input-field" placeholder="Username"
-            onchange="validateRegisterUsername()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="password" id="register_password" class="input-field" placeholder="Password"
-            onchange="validateRegisterPassword()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="password" id="register_password2" class="input-field" placeholder="Confirm Password"
-            onchange="validateRegisterPassword2()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="address" id="register_address" class="input-field" placeholder="Address">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="zip-code" id="register_zipcode" class="input-field" placeholder="ZIP Code"
-            onchange="validateRegisterZipCode()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="country" id="register_country" class="input-field" placeholder="Country"
-            onchange="validateRegisterCountry()">
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <select id="register_sex" class="input-field">
-            <option>Male</option>
-            <option>Female</option>
-            <option>Other</option>
-          </select>
-          <div class="message"></div>
-        </div>
-        <div class="input-box">
-          <input type="language" id="register_language" class="input-field" placeholder="Language"
-            onchange="validateRegisterLanguage()">
-          <div class="message"></div>
-        </div>
-        <textarea class="input-field" placeholder="About/Bio" id="register_bio"></textarea>
-        <input type="checkbox" class="tickbox" id="register_agree">
+      <form id="register" class="user-input">
+        <input type="text" class="input-field" placeholder="Name" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" required>
+        <input type="checkbox" class="tickbox" required>
         <span>I agree to the
           <a class="terms-and-conditions" href="/terms_and_confitions.html">terms and conditions</a>
         </span>
-        <input type="submit" class="submit-btn" value="Register"></input>
+        <button type="submit" class="submit-btn"><a class="button" href="home_screen.html">Register</a></button>
       </form>
     </div>
   </div>
@@ -122,6 +52,26 @@
       <div class="material-icons f18">flag</div>
     </div>
   </div>
+
+  <script>
+
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("slider");
+
+    function move_login_form() {
+      x.style.left = "65px";
+      y.style.left = "410px";
+      z.style.left = "0px";
+    }
+
+    function move_register_form() {
+      x.style.left = "-290px";
+      y.style.left = "65px";
+      z.style.left = "110px";
+    }
+  </script>
+
 </body>
 
 </html>
