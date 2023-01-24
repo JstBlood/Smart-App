@@ -9,7 +9,7 @@ body {
 }
 
 #content {
-  min-height: calc(100vh - 139px);
+  min-height: calc(100vh - 135px);
 }
 
 .sign-in-form {
