@@ -1,0 +1,175 @@
+.progress{
+    display: flex;
+    width:80%;
+    margin-top: 50px;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.progress-item{
+    margin: 10px;
+    align-self: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.progress-bar-back{
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: var(--color-6);
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progress-bar-front{
+    background-color: var(--color-5);
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+    margin-left: 0%;
+}
+
+.flexbox_title{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#edit{
+    background: transparent;
+    border: none;
+}
+
+#edit:hover{
+    text-shadow: 0 0 5px black;
+}
+
+p{
+    word-break: break-all;
+    white-space: normal;
+}
+
+#goal_desc{
+    width: 50%;
+    margin-left: 10%;
+}
+
+.smart{
+    font-weight: bold;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.smart_row{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.smart_row_item{
+    border: solid 1px black;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.smart_desc{
+    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+.smart_input{
+    padding: 0%;
+    margin: 0%;
+    flex-grow: 2;
+    flex-shrink: 2;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+
+.flexbox_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.btn_bottom{
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: var(--color-5);
+    color: white;
+    border: solid 2px #000;
+}
+
+.btn_bottom:hover{
+    box-shadow: 0px 0px 5px #000;
+}
+
+#flex_target_notif{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+        
+}
+
+#flex_targets{
+    text-align: center;
+    align-self: stretch;
+    border-right: solid 2px grey;
+    padding-right: 10px;
+    width: 50%;
+}
+
+#flex_notifs{
+    text-align: center;
+    align-self: stretch;
+    padding-left: 10px;
+    width: 50%;
+    flex-direction: column;
+}
+
+.flex_notif{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40%;
+    margin-bottom: 10px;
+}
+
+.notif_text, .target_text{
+    text-indent: 10px;
+}
+
+.flex_target{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40%;
+    margin-bottom: 10px;
+}
+
+.target_checkbox{
+    width:20px;
+    height:20px;
+}

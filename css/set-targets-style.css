@@ -1,0 +1,166 @@
+#go_back_btn_box {
+  position: absolute;
+  right: 12%;
+  top: 120px;
+}
+
+#go_back_btn {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  color: var(--color-5);
+  text-decoration: none;
+}
+
+#go_back_btn:hover {
+  text-shadow: 0px 0px 1px;
+  text-decoration: underline;
+}
+
+#target_list {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-delete {
+  display: flex;
+  background: transparent;
+  border: none;
+  width: 15px;
+  height: 15px;
+}
+
+.btn_delete:hover {
+  text-shadow: 0px 0px 5px #000;
+}
+
+#btn_add:hover,
+.cancel_btn:hover,
+.save_btn:hover {
+  box-shadow: 0px 0px 5px #000;
+}
+
+.flexbox_title {
+  display: flex;
+  padding-top: 50px;
+}
+
+.flexbox_title_name {
+  margin-left: 10%;
+  position: absolute;
+  display: flex;
+  font-weight: bold;
+}
+
+#goal_desc {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 75px;
+}
+
+.target {
+  width: 100%;
+  height: 70px;
+  background-color: whitesmoke;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.target:hover {
+  box-shadow: 5px 5px 10px #000;
+}
+
+.target_flexbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.target_box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tickbox {
+  width: 20px;
+  height: 20px;
+}
+
+.delete_btn {
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+}
+
+.delete_btn:hover {
+  text-shadow: 0px 0px 5px #000;
+}
+
+.flex_btn_add {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn_add {
+  background-color: var(--color-5);
+  border-width: 0;
+  border-radius: 40px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+}
+
+#create_target {
+  visibility: hidden;
+  width: 52%;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px #000;
+  padding: 15px;
+  margin: 60px auto;
+  flex-direction: column;
+}
+
+.create_target_top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.create_target_bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.save_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  margin: auto;
+  background-color: var(--color-4);
+  color: black;
+  border: solid 2px #000;
+  margin-left: 10px;
+}
+
+.cancel_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  margin: auto;
+  background-color: var(--color-2);
+  color: black;
+  border: none;
+  opacity: 0.75;
+}
