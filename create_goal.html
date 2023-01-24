@@ -20,11 +20,11 @@
         <a href="home_screen.html" id="cancel_btn_box">
             <button id="cancel_btn" class="f18">cancel creation</button>
         </a>
-        <form id="form">
-            <div id="flexbox_name">
+        <form id="form" action="set_targets.html">
+            <div id="flexbox_name" action="">
                 <div class="td_right_arrow material-icons f36">subdirectory_arrow_right</div>
                 <div class="td_right_arrow">
-                    <input type="text" class="f20" id="goal_name" name="goal_name" placeholder="Goal Name">
+                    <input type="text" class="f20" id="goal_name" name="goal_name" placeholder="Goal Name" required>
                 </div>
             </div>
             <br>
@@ -33,7 +33,7 @@
                     <tr>
                         <td class="td_right_arrow"><i class="material-icons f36">subdirectory_arrow_right</i></td>
                         <td class="td_right_arrow"><textarea name="goal_desc" class="f16" id="goal_desc" rows="6"
-                                cols="70" wrap="soft" placeholder="Goal Description"></textarea></td>
+                                cols="70" wrap="soft" placeholder="Goal Description" required></textarea></td>
                     </tr>
                 </table>
             </div>
@@ -44,7 +44,7 @@
                 <div class="smart_row_item smart material-icons f36 col2">category</div>
                 <div class="smart_row_item f24 smart_desc">Specific area :</div>
                 <div class="smart_row_item f24 smart_input">
-                    <input type="text" class="smart_input_field f18" name="goal_area" placeholder="Example Area">
+                    <input type="text" class="smart_input_field f18" name="goal_area" placeholder="Example Area" required>
                 </div>
             </div>
             <br>
@@ -53,7 +53,7 @@
                 <div class="smart_row_item smart material-icons f36 col3">trending_up</div>
                 <div class="smart_row_item f24 smart_desc">Measure Unit :</div>
                 <div class="smart_row_item f24 smart_input">
-                    <input type="text" class="smart_input_field f18" name="goal_unit" placeholder="meters">
+                    <input type="text" class="smart_input_field f18" name="goal_unit" placeholder="meters" required>
                 </div>
             </div>
             <br>
@@ -62,7 +62,7 @@
                 <div class="smart_row_item smart material-icons f36 col4">people</div>
                 <div class="smart_row_item f24 smart_desc">Assigned To :</div>
                 <div class="smart_row_item f24 smart_input">
-                    <input type="text" class="smart_input_field f18" name="goal_person" placeholder="Alice, Bob...">
+                    <input type="text" class="smart_input_field f18" name="goal_person" placeholder="Alice, Bob..." required>
                 </div>
             </div>
             <br>
@@ -71,7 +71,7 @@
                 <div class="smart_row_item smart material-icons f36 col5">task_alt</div>
                 <div class="smart_row_item f24 smart_desc">Realistic Result :</div>
                 <div class="smart_row_item f24 smart_input">
-                    <input type="number" class="smart_input_field f18" name="goal_result" placeholder=1>
+                    <input type="number" class="smart_input_field f18" name="goal_result" placeholder=1 required>
                 </div>
                 <div style="border:none; padding-left:5px;">Units</div>
             </div>
@@ -81,15 +81,13 @@
                 <div class="smart_row_item smart material-icons f36 col6">schedule</div>
                 <div class="smart_row_item f24 smart_desc">Time Bound :</div>
                 <div class="smart_row_item f24 smart_input">
-                    <input type="date" class="smart_input_field f18" name="goal_deadline">
+                    <input type="date" class="smart_input_field f18" name="goal_deadline" required>
                 </div>
             </div>
+            <div id="flex_next_step">
+                <input type="submit" id="btn_next_step" class="f18" value="Next Step"></input>
+            </div>
         </form>
-        <div class="flexbox">
-            <a href="set_targets.html">
-                <button id="btn_next_step" class="f18">Next Step</button>
-            </a>
-        </div>
     </div>
     <div id="footer">
         <div class="footer-item footer-text">All rights reserved to Matiss Berzins & Dorian Herbiet

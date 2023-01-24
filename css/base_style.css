@@ -8,7 +8,7 @@
 }
 
 * {
-    font-family: sans-serif, verdana;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a,
@@ -18,6 +18,15 @@ button {
 
 .material-icons {
     vertical-align: bottom;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.f64,
+.material-icons.f64 {
+    font-size: 64px;
 }
 
 .f36,
@@ -33,6 +42,11 @@ button {
 .f30,
 .material-icons.f30 {
     font-size: 30px;
+}
+
+.f28,
+.material-icons.f28 {
+    font-size: 28px;
 }
 
 .f24,
@@ -129,7 +143,7 @@ body {
 
 #footer {
     display: flex;
-    position: absolute;
+    position: relative;
     border-style: outset;
     width: 100%;
     height: 40px;

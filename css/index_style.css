@@ -4,27 +4,33 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.content {
-  background: var(--color-4);
-  height: 100%;
-  width: 100%;
-  position: absolute;
+body {
+  background-color: var(--color-4);
+}
+
+#content {
+  min-height: calc(100vh - 129px);
 }
 
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  height: 465px;
+  min-height: 670px;
   position: relative;
-  margin: 165px auto;
-  overflow: hidden;
+  top: 15px;
+  margin: auto;
+  overflow-x:hidden;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
 }
 
 .slider-div {
   width: 220px;
   margin: 50px auto;
   position: relative;
-  box-shadow: 0 0 30px 1px rgba(112, 112, 112, 0.5);
   border-radius: 20px;
   background: white;
 }
@@ -55,11 +61,11 @@
   top: 125px;
   position: absolute;
   width: 280px;
-  transition: 1.6s;
+  transition: .8s;
 }
 
 .input-field {
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
   width: 100%;
   padding: 5px 0;
   border: 0;
@@ -67,6 +73,19 @@
   outline: none;
   background: var(--color-3);
   font-size: 14px;
+}
+
+.input-field.valid{
+  border-bottom: 1px solid rgba(13, 241, 32, 0.5);
+}
+
+.input-field.invalid{
+  border-bottom: 2px solid rgba(250, 13, 13, 0.5);
+}
+
+.message{
+  font-size: 11px;
+  color: red;
 }
 
 .submit-btn {
@@ -126,4 +145,9 @@ span {
   position: absolute;
   width: 100px;
   margin: auto;
+}
+
+#hidden-div {
+  visibility: hidden;
+  width: 30%;
 }
