@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script defer src="/scripts/index.js"></script>
   <script defer src="/scripts/tracker.js"></script>
+  <script defer src="/scripts/animation.js"></script>
   <title>Login Page</title>
 </head>
 
@@ -35,12 +36,14 @@
       <img class="logo" src="/images/logo.png">
       <form id="login" class="user-input" action="home_screen.html">
         <div class="input-box">
-          <input type="username" id="login_username" class="input-field" placeholder="Username" onchange="validateLoginUsername()">
+          <input type="username" id="login_username" class="input-field" placeholder="Username"
+            onchange="validateLoginUsername()">
           <div class="message"></div>
         </div>
-        
+
         <div class="input-box">
-          <input type="password" id="login_password" class="input-field" placeholder="Password" onchange="validateLoginPassword()">
+          <input type="password" id="login_password" class="input-field" placeholder="Password"
+            onchange="validateLoginPassword()">
           <div class="message"></div>
         </div>
         <input type="checkbox" class="tickbox"><span>Remember Password</span>
@@ -48,23 +51,28 @@
       </form>
       <form id="register" class="user-input" action="home_screen.html">
         <div class="input-box">
-          <input type="text" id="register_name" class="input-field" placeholder="Name" onchange="validateRegisterName()">
+          <input type="text" id="register_name" class="input-field" placeholder="Name"
+            onchange="validateRegisterName()">
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="email" id="register_email" class="input-field" placeholder="Email" onchange="validateRegisterEmail()">
+          <input type="email" id="register_email" class="input-field" placeholder="Email"
+            onchange="validateRegisterEmail()">
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="username" id="register_username" class="input-field" placeholder="Username" onchange="validateRegisterUsername()">
+          <input type="username" id="register_username" class="input-field" placeholder="Username"
+            onchange="validateRegisterUsername()">
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="password" id="register_password" class="input-field" placeholder="Password" onchange="validateRegisterPassword()">
+          <input type="password" id="register_password" class="input-field" placeholder="Password"
+            onchange="validateRegisterPassword()">
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="password" id="register_password2" class="input-field" placeholder="Confirm Password" onchange="validateRegisterPassword2()">
+          <input type="password" id="register_password2" class="input-field" placeholder="Confirm Password"
+            onchange="validateRegisterPassword2()">
           <div class="message"></div>
         </div>
         <div class="input-box">
@@ -72,11 +80,13 @@
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="zip-code" id="register_zipcode" class="input-field" placeholder="ZIP Code" onchange="validateRegisterZipCode()">
+          <input type="zip-code" id="register_zipcode" class="input-field" placeholder="ZIP Code"
+            onchange="validateRegisterZipCode()">
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="country" id="register_country" class="input-field" placeholder="Country" onchange="validateRegisterCountry()">
+          <input type="country" id="register_country" class="input-field" placeholder="Country"
+            onchange="validateRegisterCountry()">
           <div class="message"></div>
         </div>
         <div class="input-box">
@@ -88,7 +98,8 @@
           <div class="message"></div>
         </div>
         <div class="input-box">
-          <input type="language" id="register_language" class="input-field" placeholder="Language" onchange="validateRegisterLanguage()">
+          <input type="language" id="register_language" class="input-field" placeholder="Language"
+            onchange="validateRegisterLanguage()">
           <div class="message"></div>
         </div>
         <textarea class="input-field" placeholder="About/Bio" id="register_bio"></textarea>
@@ -111,28 +122,6 @@
       <div class="material-icons f18">flag</div>
     </div>
   </div>
-
-  <script>
-
-    var a = document.getElementById("login");
-    var b = document.getElementById("register");
-    var c = document.getElementById("slider");
-
-    function move_to_login_form() {
-      a.style.left = "65px";
-      b.style.left = "410px";
-      c.style.left = "0px";
-    }
-
-    function move_to_register_form() {
-      a.style.left = "-290px";
-      b.style.left = "65px";
-      c.style.left = "110px";
-    }
-
-
-  </script>
-
 </body>
 
 </html>
