@@ -1,9 +1,7 @@
-# PolarFox27.github.io
+# Smart App
 
 
-This website is a project for the Web and Database Technology course from TU Delft (CSE1500).
-It is a goal setting app following the SMART framework. (https://en.wikipedia.org/wiki/SMART_criteria)
+Smart App is a Goal-Setting website created for the Web & Database Technology Course (CSE1500) of TU-Delft.
+You can create goals, add targets and set up push notifications from the comfort of your couch following the SMART Framework(https://en.wikipedia.org/wiki/SMART_criteria)
 
-
-
-Made by Dorian Herbiet (dherbiet) and Matiss Berzins (mberzins)
+Made by Dorian (PolarFox27) and Matiss (JstBlood)
