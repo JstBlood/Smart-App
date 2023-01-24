@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/test.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.login-form {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  margin: 130px auto;
+  background-color: whitesmoke;
+  padding: 5px;
+  border: 0;
+  overflow: hidden;
+}
+
+.button {
+  width: 210px;
+  height: 50px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  transition: .5s;
+  background-color: black;
+}
+
+.login-slider {
+  padding: 15px 30px;
+  cursor: pointer;
+  background: transparent;
+  margin: auto;
+  border: 0;
+  outline: none;
+  position: relative;
+  border-radius: 20px;
+  transition: .5s;
+  color: white;
+}
+
+.register-slider {
+  left: 8px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background: transparent;
+  margin: auto;
+  border: 0;
+  outline: none;
+  position: relative;
+  border-radius: 20px;
+  transition: .5s;
+  color: white;
+}
+
+#slider {
+  position: absolute;
+  width: 101px;
+  height: 100%;
+  background: red;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.user-input {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(24, 24, 24, 0.5);
+  outline: 0;
+  background: transparent;
+}
+
+.login {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: red;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.check-box {
+  margin: 30px 10px 30px 0px;
+  cursor: pointer;
+}
+
+span {
+  color: black;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login-btn:hover,
+#login-btn:visited,
+#login-btn:link,
+#login-btn:active {
+  left: 50px;
+  text-decoration: none;
+}
+
+#register-btn:hover,
+#register-btn:visited,
+#register-btn:link,
+#register-btn:active {
+  left: 50px;
+  text-decoration: none;
+}

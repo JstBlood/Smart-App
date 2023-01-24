@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+  background: var(--color-4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sign-in-form {
+  background: var(--color-3);
+  width: 400px;
+  height: 465px;
+  position: relative;
+  margin: 165px auto;
+  overflow: hidden;
+}
+
+.slider-div {
+  width: 220px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 0 30px 1px rgba(112, 112, 112, 0.5);
+  border-radius: 20px;
+  background: white;
+}
+
+.toggle-btn {
+  left: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: black;
+}
+
+#slider {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: var(--color-2);
+  border-radius: 20px;
+  transition: .8s;
+}
+
+.user-input {
+  top: 125px;
+  position: absolute;
+  width: 280px;
+  transition: 1.6s;
+}
+
+.input-field {
+  margin: 5px;
+  width: 100%;
+  padding: 5px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(90, 90, 90, 0.4);
+  outline: none;
+  background: var(--color-3);
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 60%;
+  padding: 10px;
+  bottom: 15px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin: auto;
+  background: var(--color-2);
+  border: 0;
+  font-size: 14px;
+  outline: 0;
+  border-radius: 20px;
+}
+
+.tickbox {
+  margin: 13px 8px 33px 5px;
+}
+
+span {
+  color: black;
+  font-size: 14px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login {
+  left: 65px;
+}
+
+#register {
+  left: 410px;
+}
+
+.terms-and-conditions {
+  text-decoration: none;
+  color: var(--color-5);
+}
+
+.terms-and-conditions:hover {
+  text-decoration: underline solid var(--color-5);
+  cursor: pointer;
+}
+
+.button,
+.button:active,
+.button:visited,
+.button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  top: 19px;
+  position: absolute;
+  width: 100px;
+  margin: auto;
+}

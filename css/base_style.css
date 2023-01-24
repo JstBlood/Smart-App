@@ -1,0 +1,159 @@
+:root {
+    --color-1: #FFFFFF;
+    --color-2: #ef476f;
+    --color-3: #ffd166;
+    --color-4: #06d6a0;
+    --color-5: #118ac2;
+    --color-6: #073b4c;
+}
+
+* {
+    font-family: sans-serif, verdana;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+.f36,
+.material-icons.f36 {
+    font-size: 36px;
+}
+
+.f32,
+.material-icons.f32 {
+    font-size: 32px;
+}
+
+.f30,
+.material-icons.f30 {
+    font-size: 30px;
+}
+
+.f24,
+.material-icons.f24 {
+    font-size: 24px;
+}
+
+.f20,
+.material-icons.f20 {
+    font-size: 20px;
+}
+
+.f18,
+.material-icons.f18 {
+    font-size: 18px;
+}
+
+.f16,
+.material-icons.f16 {
+    font-size: 16px;
+}
+
+.f15,
+.material-icons.f15 {
+    font-size: 15px;
+}
+
+.col1 {
+    color: var(--color-1);
+}
+
+.col2 {
+    color: var(--color-2);
+}
+
+.col3 {
+    color: var(--color-3);
+}
+
+.col4 {
+    color: var(--color-4);
+}
+
+.col5 {
+    color: var(--color-5);
+}
+
+.col6 {
+    color: var(--color-6);
+}
+
+
+
+body {
+    background-color: var(--color-1);
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#content {
+    min-height: calc(100vh - 90px);
+}
+
+
+#header {
+    display: flex;
+    border-style: outset;
+    width: 100%;
+    height: 50px;
+    border-color: black;
+    border-width: 1px;
+    background-color: rgba(235, 235, 235, 0.7);
+    justify-content: space-between;
+}
+
+.header-item {
+    margin: 10px;
+    align-self: center;
+}
+
+.header_btn {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+}
+
+.header_btn:hover {
+    text-shadow: 0px 0px 5px;
+}
+
+
+
+#footer {
+    display: flex;
+    position: absolute;
+    border-style: outset;
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    border-color: black;
+    border-width: 1px;
+    background: rgba(235, 235, 235, 0.7);
+    justify-content: space-between;
+}
+
+.footer-item {
+    margin: 10px;
+    align-self: center;
+}
+
+.footer-text {
+    font-size: 15px;
+}
+
+.footer-text-smart {
+    color: var(--color-5);
+    text-decoration: none;
+}
+
+.footer-text-smart:hover {
+    text-decoration: underline solid var(--color-5);
+}
